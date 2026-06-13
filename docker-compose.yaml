@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   xui-exporter:
-    image: xui-exporter
+    image: ilshz/xui-exporter:latest
     ports: 
       - "9111:9100"
     environment:
