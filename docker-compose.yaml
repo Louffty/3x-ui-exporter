@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  xui-exporter:
+    image: xui-exporter
+    ports: 
+      - "9111:9100"
+    environment:
+      USERNAME: ${USERNAME}
+      PASSWORD: ${PASSWORD}
+      LISTEN_ADDR: ":9100"
+      PANEL_URL: ${PANEL_URL}
+      INSECURE_TLS: ${INSECURE_TLS}
+    restart: always
